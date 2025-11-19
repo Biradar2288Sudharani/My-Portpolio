@@ -16,3 +16,6 @@ This website showcases my profile, education, skills, projects, and contact info
 - `HTML` – For structuring the content
 - `CSS` – For styling and responsiveness
 - `JavaScript` – For interactive elements
+
+## Check my live protpolio 
+https://introdme.netlify.app/
