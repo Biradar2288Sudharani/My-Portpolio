@@ -558,14 +558,17 @@ span{
         display: block;
     }
     .navbar{
+        position: absolute;
         top: 100%;
-        font-size: 2rem;
-        color: var(--text-color);
-        margin-left: 4rem;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); 
+        display: none;  
      }
-
-    navbar a:hover
-    .navbar a:active{
+.navbar.active{
         display: block;
     }
     .navbar a{
@@ -632,4 +635,26 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+}
+/* About image mobile view code */
+@media (max-width: 768px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-img img {
+    max-width: 80%;   /* adjusts size on mobile */
+    height: auto;
+    margin: 0 auto;   /* ensures perfect center */
+    display: block;
+  }
+}
+/* About text mobile view css */
+@media (max-width: 768px) {
+  .about-text {
+    padding: 0 18px !important;     /* add space on both sides */
+    text-align: justify;            /* neat alignment */
+  }
 }
